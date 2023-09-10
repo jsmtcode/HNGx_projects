@@ -1,0 +1,15 @@
+{
+    "builds":[
+        {
+            "src":"mytask/wsgi.py",
+            "use":"@vercel/python",
+            "config":{"maxlamdaSize":"15mb","runtime":"python3.9"}
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"mytask/wsgi.py"
+        }
+    ]
+}
