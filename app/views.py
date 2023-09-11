@@ -19,7 +19,7 @@ def get_info(request):
 
     # Calculate the current UTC time with validation of +/-2 hours
     current_utc_time = datetime.utcnow()
-    current_utc_time += timedelta(hours=1) 
+    #current_utc_time += timedelta(hours=1) 
 
     response_data = {
         'slack_name': "@"+slack_name,
