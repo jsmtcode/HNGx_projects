@@ -12,7 +12,7 @@ def get_info(request):
     slack_name = request.GET.get('slack_name')
     track = request.GET.get('track')
     github_url = f"https://github.com/jsmtcode/HNGx_projects"
-    github_source_url = "https://github.com/jsmtcode/HNGx_projects/blob/master/app/views.pyclear"
+    github_source_url = "https://github.com/jsmtcode/HNGx_projects/blob/master/app/views.py"
 
     # Calculate the current day of the week
     current_day = datetime.now().strftime('%A')
