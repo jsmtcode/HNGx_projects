@@ -22,7 +22,7 @@ def get_info(request):
     current_utc_time += timedelta(hours=1) 
 
     response_data = {
-        'slack_name': slack_name,
+        'slack_name': "@"+slack_name,
         'current_day': current_day,
         'utc_time': current_utc_time.strftime("%Y-%m-%dT%H:%M:%SZ"),
         'track': track,
